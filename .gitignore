@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build outputs
+dist/
+build/
+out/
+
+# Large engine binaries (downloaded via winget/scripts, exceeds GitHub 100MB limit)
+resources/ffmpeg/ffmpeg.exe
+resources/aria2/aria2c.exe
+resources/yt-dlp/yt-dlp.exe
+IDMan.exe
+
+# Database & temp files
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.tmp
+*.part
+test_*.json
+test_*.db*
+
+# Environment and editor
+.env
+.env.local
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

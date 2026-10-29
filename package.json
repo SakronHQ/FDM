@@ -1,0 +1,25 @@
+{
+  "name": "fdm-project",
+  "version": "1.0.0",
+  "description": "FDM — Free Download Manager for Windows",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "node --test tests/*.test.mjs",
+    "dev": "npm run --workspace=apps/desktop dev",
+    "start": "npm run --workspace=apps/desktop start"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^26.6.6",
+    "cross-env": "^10.1.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3"
+  }
+}
